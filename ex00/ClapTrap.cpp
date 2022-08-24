@@ -6,7 +6,7 @@
 /*   By: agrotzsc <agrotzsc@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/24 06:56:21 by agrotzsc          #+#    #+#             */
-/*   Updated: 2022/08/24 10:23:01 by agrotzsc         ###   ########.fr       */
+/*   Updated: 2022/08/24 11:26:17 by agrotzsc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ ClapTrap::ClapTrap(const ClapTrap &obj) : _name(obj._name), _hitPoints(obj._hitP
 ClapTrap&	ClapTrap::operator=(const ClapTrap &obj)
 {
 	std::cout << "ClapTrap Copy assignment operator called" << std::endl;
+	this->_name = obj._name;
 	this->_hitPoints = obj._hitPoints;
 	this->_enerPoints = obj._enerPoints;
 	this->_attackDamage = obj._attackDamage;
